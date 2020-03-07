@@ -1,0 +1,3 @@
+🐰 Conejo
+🐶 Perro
+🐮 Vaca

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	// Global Scope
+	let message = "Hello, Ismael!"
+
+
+	// Function Scope
+	function printNumbers() {
+		var index
+		for (index = 0; index < 10; index++) {
+			function eventuallyPrintNumber(n) {
+				setTimeout(() => {
+					console.log(n)
+				}, 100)
+			}
+
+			eventuallyPrintNumber(index)
+		}
+	}
+
+	// Block Scope
+	function printNumbers2() {
+		for (let index = 0; index < 10; index++) {
+			setTimeout(() => {
+				console.log(index)
+			}, 100)
+		}
+	}
+
+	printNumbers2()
+</script>
+</html>

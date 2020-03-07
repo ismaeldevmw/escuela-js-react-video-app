@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<style>
+body {
+  margin: 0px;
+  font-family: 'Muli', sans-serif;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+	background-color: #8F57FD;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+	.login__container {
+		background-color: transparent;
+		border: none;
+		padding: 0px;
+		width: 100%;
+	}
+	.footer {	
+		align-items: flex-start;
+		flex-direction: column;	
+	}
+}
+</style>
+<body>
+  <footer class="footer">
+    <a href="/">Términos de uso</a>
+    <a href="/">Declaración de privacidad</a>
+    <a href="/">Centro de ayuda</a>
+  </footer>
+</body>
+</html>
